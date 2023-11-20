@@ -13,13 +13,15 @@
                                 ,Tussenvoegsel
                                 ,Achternaam
                                 ,Woonplaats
-                                ,Geboortedatum)
+                                ,Geboortedatum
+                                ,Lichaamslengte)
             VALUES              (NULL
                                 ,'" . $_POST['firstname'] . "'
                                 ,'" . $_POST['infix'] . "'
                                 ,'" . $_POST['lastname'] . "'
                                 ,'" . $_POST['city'] . "'
-                                ,'"  .$_POST['date'] . "')";
+                                ,'" . $_POST['date'] . "'
+                                ,'" . $_POST['length'] . "')";
 
     $statement = $pdo->prepare($sql);
     $statement->execute();

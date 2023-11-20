@@ -31,6 +31,11 @@
         <label for="">Geboortedatum: </label>
         <input type="date" name="date" id="date"><br><br>
 
+        <!-- Maak een nieuw formulierveld Lichaamslengte voor het opslaan in de database -->
+
+        <label for="length">Lichaamslengte (cm): </label>
+        <input type="number" name="length" id="length"><br><br>
+
         <input type="submit" value="Verzend">
 
         <!-- Maak twee andere input-tags waarin je een tussenvoegsel en achternaam kunt invullen -->
