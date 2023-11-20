@@ -28,6 +28,8 @@
 
         <!-- Maak een nieuw formulierveld voor het opslaan van de geboortedatum in de database -->
 
+        <label for="">Geboortedatum: </label>
+        <input type="date" name="date" id="date"><br><br>
 
         <input type="submit" value="Verzend">
 

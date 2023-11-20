@@ -1,5 +1,5 @@
 <?php
-    var_dump($_POST);
+    // var_dump($_POST);
     include('config/config.php');
 
     $dsn = "mysql:host=$dbHost;
@@ -19,12 +19,13 @@
                                 ,'" . $_POST['lastname'] . "'
                                 ,'" . $_POST['city'] . "')";
 
-    echo $sql;
     $statement = $pdo->prepare($sql);
     $statement->execute();
 
+    header('Refresh:3; index.php');
 
-    //echo "Mijn naam is: " . $_POST['firstname'] . " " . $_POST['infix'] . " " . $_POST['lastname'];
+    echo "De gegevens zijn opgeslagen in de database";
 
-    //echo "Mijn geboortedatum is:"; 
+
+    
 ?>
