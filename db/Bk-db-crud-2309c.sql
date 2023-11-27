@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Gegenereerd op: 20 nov 2023 om 10:19
+-- Gegenereerd op: 27 nov 2023 om 08:28
 -- Serverversie: 8.0.32
 -- PHP-versie: 8.1.10
 
@@ -35,23 +35,19 @@ CREATE TABLE IF NOT EXISTS `Persoon` (
   `Voornaam` varchar(50) NOT NULL,
   `Tussenvoegsel` varchar(10) NOT NULL,
   `Achternaam` varchar(50) NOT NULL,
+  `Woonplaats` varchar(100) NOT NULL,
+  `Geboortedatum` date NOT NULL,
+  `Lichaamslengte` int NOT NULL,
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `Persoon`
 --
 
-INSERT INTO `Persoon` (`Id`, `Voornaam`, `Tussenvoegsel`, `Achternaam`) VALUES
-(1, 'Arjan', 'de', 'Ruijter'),
-(2, 'Bert', 'de', 'Vries'),
-(3, 'Johan', 'van', 'Vliet'),
-(4, 'Rich', 'van der', 'Roll'),
-(5, 'Rich', 'van der', 'Roll'),
-(6, 'Rich', 'van der', 'Roll'),
-(7, 'Jan', 'van der', 'Sluijs'),
-(8, 'Jan', 'van der', 'Sluijs'),
-(9, 'Johan', 'van der ', 'Sluis');
+INSERT INTO `Persoon` (`Id`, `Voornaam`, `Tussenvoegsel`, `Achternaam`, `Woonplaats`, `Geboortedatum`, `Lichaamslengte`) VALUES
+(19, 'q', 'q', 'q', 'q', '1968-08-30', 0),
+(20, 'Max', 'van', 'Weezel', 'Utrecht', '1968-08-30', 185);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
