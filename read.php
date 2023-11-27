@@ -51,3 +51,35 @@
      * Laat de opgehaalde records uit de database zien
      */
     var_dump($result);
+
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>CRUD PHP</title>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <th>Voornaam</th>
+            <th>Tussenvoegsel</th>
+            <th>Achternaam</th>
+            <th>Woonplaats</th>
+            <th>Geboortedatum</th>
+            <th>Lichaamslengte</th>
+        </thead>
+        <tbody>
+
+        </tbody>    
+    </table>
+
+</body>
+</html>
+    
