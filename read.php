@@ -52,6 +52,17 @@
      */
     var_dump($result);
 
+    /**
+     * We zetten de gegevens uit de database in een html structuur
+     */
+    $tableRows = "";
+
+    foreach ($result as $personInfo) {
+        $tableRows .= "<tr>
+                            <td>" . $personInfo->Voornaam . "</td>
+                       </tr>";
+    } 
+
 
 ?>
 
@@ -84,6 +95,7 @@
                 <td>30-08-1967</td>
                 <td>193</td>
             </tr>
+            <?php echo $tableRows; ?>
         </tbody>    
     </table>
 
