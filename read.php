@@ -76,7 +76,14 @@
             <th>Lichaamslengte</th>
         </thead>
         <tbody>
-
+            <tr>
+                <td>Fred</td>
+                <td>de</td>
+                <td>Bakker</td>
+                <td>Amsterdam</td>
+                <td>30-08-1967</td>
+                <td>193</td>
+            </tr>
         </tbody>    
     </table>
 
