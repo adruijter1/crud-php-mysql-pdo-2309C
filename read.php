@@ -50,7 +50,7 @@
     /**
      * Laat de opgehaalde records uit de database zien
      */
-    var_dump($result);
+    // var_dump($result);
 
     /**
      * We zetten de gegevens uit de database in een html structuur
@@ -58,8 +58,17 @@
     $tableRows = "";
 
     foreach ($result as $personInfo) {
+        $date = date_format(date_create($personInfo->Geboortedatum), 'd-m-Y');
         $tableRows .= "<tr>
-                            <td>" . $personInfo->Voornaam . "</td>
+                            <td>$personInfo->Voornaam</td>
+                            <td>$personInfo->Tussenvoegsel</td>
+                            <td>$personInfo->Achternaam</td>
+                            <td>$personInfo->Woonplaats</td>
+                            <td>$date</td>
+                            <td>$personInfo->Lichaamslengte</td>
+                            <td>
+                                <a href='update.php'><img src='img/b_edit.png' alt='pencil'></a>
+                            </td>
                        </tr>";
     } 
 
@@ -76,7 +85,7 @@
     <title>CRUD PHP</title>
 </head>
 <body>
-
+    <h3>Persoonsgegevens</h3>
     <table>
         <thead>
             <th>Voornaam</th>
@@ -85,16 +94,9 @@
             <th>Woonplaats</th>
             <th>Geboortedatum</th>
             <th>Lichaamslengte</th>
+            <th>Wijzigen</th>
         </thead>
         <tbody>
-            <tr>
-                <td>Fred</td>
-                <td>de</td>
-                <td>Bakker</td>
-                <td>Amsterdam</td>
-                <td>30-08-1967</td>
-                <td>193</td>
-            </tr>
             <?php echo $tableRows; ?>
         </tbody>    
     </table>

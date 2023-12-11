@@ -58,7 +58,7 @@
     /** 
      * Wacht 3 seconden op deze pagina en ga dan naar index.php
      */
-    header('Refresh:3; index.php');
+    header('Refresh:3; read.php');
 
     /**
      * Zet deze tekst gedurende 3 seconden op het scherm
