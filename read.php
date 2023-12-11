@@ -24,7 +24,8 @@
     /**
      * Maak een nieuwe SELECT-query voor het opvragen van de data uit de database-tabel
      */
-    $sql = "SELECT Voornaam
+    $sql = "SELECT Id
+                  ,Voornaam
                   ,Tussenvoegsel
                   ,Achternaam
                   ,Woonplaats
@@ -67,7 +68,7 @@
                             <td>$date</td>
                             <td>$personInfo->Lichaamslengte</td>
                             <td>
-                                <a href='update.php'><img src='img/b_edit.png' alt='pencil'></a>
+                                <a href='update.php?id=$personInfo->Id'><img src='img/b_edit.png' alt='pencil'></a>
                             </td>
                        </tr>";
     } 
