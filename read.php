@@ -68,7 +68,14 @@
                             <td>$date</td>
                             <td>$personInfo->Lichaamslengte</td>
                             <td>
-                                <a href='update.php?id=$personInfo->Id'><img src='img/b_edit.png' alt='pencil'></a>
+                                <a href='update.php?id=$personInfo->Id'>
+                                    <img src='img/b_edit.png' alt='pencil'>
+                                </a>
+                            </td>
+                            <td>
+                                <a href='delete.php?id=$personInfo->Id'>
+                                    <img src='img/b_drop.png' alt='cross'>
+                                </a>
                             </td>
                        </tr>";
     } 
@@ -96,6 +103,7 @@
             <th>Geboortedatum</th>
             <th>Lichaamslengte</th>
             <th>Wijzigen</th>
+            <th>Verwijderen</th>
         </thead>
         <tbody>
             <?php echo $tableRows; ?>

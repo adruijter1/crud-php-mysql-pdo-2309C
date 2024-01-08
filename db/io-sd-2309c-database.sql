@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Gegenereerd op: 27 nov 2023 om 08:28
+-- Gegenereerd op: 08 jan 2024 om 08:41
 -- Serverversie: 8.0.32
 -- PHP-versie: 8.1.10
 
@@ -20,8 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `crud-php-mysql-pdo-2309C`
 --
-CREATE DATABASE IF NOT EXISTS `crud-php-mysql-pdo-2309C` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
-USE `crud-php-mysql-pdo-2309C`;
 
 -- --------------------------------------------------------
 
@@ -39,15 +37,14 @@ CREATE TABLE IF NOT EXISTS `Persoon` (
   `Geboortedatum` date NOT NULL,
   `Lichaamslengte` int NOT NULL,
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `Persoon`
 --
 
 INSERT INTO `Persoon` (`Id`, `Voornaam`, `Tussenvoegsel`, `Achternaam`, `Woonplaats`, `Geboortedatum`, `Lichaamslengte`) VALUES
-(19, 'q', 'q', 'q', 'q', '1968-08-30', 0),
-(20, 'Max', 'van', 'Weezel', 'Utrecht', '1968-08-30', 185);
+(21, 'Arjan', 'de', 'Ruijter', 'Castricum', '1967-08-30', 193);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
